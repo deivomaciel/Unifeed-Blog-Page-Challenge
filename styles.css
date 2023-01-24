@@ -2,5 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;   
 }
 
+body {
+    padding: 16px;
+}
+
+.all-posts {
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    width: 350px;
+    position: relative;
+    margin-right: 32px;
+}
+.main-img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.post h2 {
+    font-size: 2.2rem;
+    margin-top: 24px;
+}
+
+.post p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+.post-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.avatar-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.user-info p,
+.user-info h3 {
+    font-size: small;
+    margin-top: 4px;
+}
+
+@media (max-width: 772px) {
+    .all-posts {
+        flex-direction: column;
+    }
+
+    .post {
+        margin: auto;
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 374px) {
+    .post {
+        width: 100%;
+        margin-right: 32px;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+}
