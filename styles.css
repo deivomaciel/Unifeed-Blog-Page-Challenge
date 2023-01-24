@@ -9,6 +9,10 @@ body {
     padding: 16px;
 }
 
+.container {
+    position: relative;
+}
+
 .all-posts {
     display: flex;
     justify-content: center;
@@ -61,6 +65,17 @@ body {
     margin-top: 4px;
 }
 
+footer {
+    width: 100%;
+    position: absolute;
+    padding: 0px 90px 32px 90px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666666;
+}
+
 @media (max-width: 772px) {
     .all-posts {
         flex-direction: column;
@@ -69,6 +84,16 @@ body {
     .post {
         margin: auto;
         margin-top: 48px;
+    }
+
+    footer {
+        display: inline;
+        padding: 0 0 26px 0;
+    }
+
+    footer p {
+        margin-top: 8px;
+        text-align: left;
     }
 }
 
