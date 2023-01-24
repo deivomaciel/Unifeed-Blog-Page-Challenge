@@ -9,6 +9,37 @@ body {
     padding: 16px;
 }
 
+.main-post{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    margin: 40px 90px 60px;
+    width: 85%;
+}
+
+.post-img {
+    height: 280px;
+    width: 550px;
+    padding-right: 42px;
+}
+.post-txt h2 {
+    font-size: 2.3rem;
+    line-height: 46px;
+    padding-bottom: 10px;
+    
+    
+}
+.post-txt p {
+    line-height: 32px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #666666;  
+}
+
+#footer-main {
+    padding-top: 2em;
+}
+
 .container {
     position: relative;
 }
@@ -77,6 +108,17 @@ footer {
 }
 
 @media (max-width: 772px) {
+    .main-post{
+        flex-direction: column;
+        width: 350px;
+        margin:auto;        
+    }
+    .post-img {
+        width: 350px;
+        padding-right: 0%;
+        padding-bottom: 2em;    
+    }
+
     .all-posts {
         flex-direction: column;
     }
@@ -98,6 +140,18 @@ footer {
 }
 
 @media (max-width: 374px) {
+    .main-post {
+        margin: 0;
+    }
+
+    .post-img {
+        width: 350px;
+    }
+
+    .post-txt h2 {
+        padding-top: 0.1em;
+    }
+
     .post {
         width: 100%;
         margin-right: 32px;
