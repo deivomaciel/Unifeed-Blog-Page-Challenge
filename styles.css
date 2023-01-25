@@ -188,7 +188,7 @@ footer {
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 742px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -235,7 +235,9 @@ footer {
     .open {
         display: block;
     }
+}
 
+@media (max-width: 374px) {
     .main-post {
         margin: 0;
     }
