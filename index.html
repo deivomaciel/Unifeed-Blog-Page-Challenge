@@ -11,6 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="Assets/Logo.svg">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Pricing</a></li>
+                </ul>
+            
+            <div class="login-button">
+                <button><a href="#">Subscribe</a></button>
+            </div>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="Assets/Hamburger Menu.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Subscribe</a></button>
+            </div>
+        </div>
+    </header>
     <main>
     <section>
         <div class="main-post">
@@ -84,5 +117,6 @@
         </footer>
     </div> 
     </main>   
+    <script src="mobile.js"></script>
 </body>
 </html>
